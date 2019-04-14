@@ -7,89 +7,102 @@
   </head>
   <body>
     <header class="page-header">
-      <a  class="page-header__logo" href="#">
-        <img class="page-header__logo-image" src="" width="75" height="22" alt="pink">
-      </a>
-      <nav class="page-navigation">
-        <button class="page-navigation__togle" type="button">
-          Открыть меню
-        </button>
-        <div class="page-navigation__wrapper">
-          <ul class="page-navigation__list site-list">
-            <li class="site-list__item">
-              <a>Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">Фотографии</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a href="https://htmlacademy.ru">HtmlAcademy</a>
-            </li>
-          </ul>
+      <div class="page-header__container">
+        <nav class="page-navigation">
+          <div class="page-navigation__wrapper-header">
+            <a  class="page-header__logo" href="#">
+              <img class="page-header__logo-image" src="img/icon_logo_pink_white_mobile.svg" width="75" height="22" alt="pink">
+            </a>
+            <button class="page-navigation__togle" type="button">
+              Открыть меню
+            </button>
+          </div>
+          <div class="page-navigation__wrapper">
+            <ul class="page-navigation__list site-list">
+              <li class="site-list__item">
+                <a class="site-list__link">Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="pink-photo.html">Фотографии</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="pink-form.html">Конкурс</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="https://htmlacademy.ru">HtmlAcademy</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Pink-расскрась свои будни</h1>
       <section class="download">
-        <div class="download__wrapper">
+        <div class="download__container">
           <h2 class="visually-hidden">Загрузить приложение</h2>
-          <img class="download__img" src="" width="" height="" alt="Картинка приложения">
-          <a class="download__apps" href="#">
-            Скачать приложение
-          </a>
-          <ul class="download__list systems">
-            <li class="systems__item systems__item--apple">
-            </li>
-            <li class="systems__item systems__item--android">
-            </li>
-            <li class="systems__item systems__item--windows">
-            </li>
-          </ul>
-          <p class="download__description">
+          <div class="download__wrapper-img">
+          </div><!-- <img class="download__img" src="img/cp_background_mobile1.jpg" width="320" height="462" alt="Картинка приложения"> -->
+          <div class="download__wrapper">
+            <a class="download__apps" href="#">
+              Скачать приложение
+            </a>
+            <ul class="download__list systems">
+              <li class="systems__item logo">
+                <div class="logo__item logo__item--apple"></div>
+              </li>
+              <li class="systems__item logo">
+                <div class="logo__item logo__item--android"></div>
+              </li>
+              <li class="systems__item logo">
+                <div class="logo__item logo__item--microsoft"></div>
+              </li>
+            </ul>
+            <p class="download__description">
             Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-          </p>
+            </p>
+          </div>
         </div>
       </section>
       <section class="advantage">
-        <h2 class="visually-hidden">Наши преимущества</h2>
-        <div class="advantage__wrapper">
-          <div class="advantage__wrapper advantage__wrapper--white">
+        <div class="advantage-container">
+          <h2 class="visually-hidden">Наши преимущества</h2>
+          <div class="advantage__wrapper">
             <p class="advantage__description">Устали от серости мегаполиса?</p>
             <p class="advantage__description">Нам есть, что вам предложить!</p>
+            <ul class="advantage__list">
+              <li class="advantage__item">
+                <h3 class="advantage__title">
+                  Поднимает настроение
+                </h3>
+                <p class="advantage__description advantage__description--small">
+                  Приложение позволит вам победить осеннюю хандру и депрессию
+                  буквально в несколько кликов!
+                </p>
+              </li>
+              <li class="advantage__item">
+                <h3 class="advantage__title">
+                  Меняет мир вокруг
+                </h3>
+                <p class="advantage__description advantage__description--small">
+                  Сделайте снимок и украсьте его смайликом или текстовой
+                  подписью, чтобы усилить эффект
+                </p>
+              </li>
+              <li class="advantage__item">
+                <h3 class="advantage__title">
+                  Заводит новых друзей
+                </h3>
+                <p class="advantage__description advantage__description--small">
+                  Ставьте лайки, комментируйте, делитесь фотографиями с
+                  друзьями и заводите новых
+                </p>
+              </li>
+            </ul>
+            <div class="advantage__image-wrapper">
+              <img class="advantage__image" src="img/img/mobile/cp_iphone_screen_mobile@1x.png" height="320" width="157" alt="Экран айфона">
+            </div>
           </div>
-          <ul class="advantage__list">
-            <li class="advantage__item">
-              <h3 class="advantage__title">
-                Поднимает настроение
-              </h3>
-              <p class="advantage__description advantage__description--small">
-                Приложение позволит вам победить осеннюю хандру и депрессию
-                буквально в несколько кликов!
-              </p>
-            </li>
-            <li class="advantage__item">
-              <h3 class="advantage__title">
-                Меняет мир вокруг
-              </h3>
-              <p class="advantage__description advantage__description--small">
-                Сделайте снимок и украсьте его смайликом или текстовой
-                подписью, чтобы усилить эффект
-              </p>
-            </li>
-            <li class="advantage__item">
-              <h3 class="advantage__title">
-                Заводит новых друзей
-              </h3>
-              <p class="advantage__description advantage__description--small">
-                Ставьте лайки, комментируйте, делитесь фотографиями с
-                друзьями и заводите новых
-              </p>
-            </li>
-          <img class="advantage__image" href="" height="" width="" alt="">
         </div>
       </section>
     </main>
