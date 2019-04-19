@@ -1,0 +1,42 @@
+.research {
+  display: none;
+}
+
+/*Стилизация для планшета*/
+
+@media (min-width: @tablet-width) {
+  .research {
+    display: block;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .research__container {
+    width: 660px;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .research__wrapper-title {
+    width: 310px;
+  }
+}
+
+/*Стилизация для пк*/
+
+@media (min-width: @desktop-width) {
+  .research__container {
+    width: 1200px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .research__wrapper-title {
+    width: 570px;
+  }
+}
