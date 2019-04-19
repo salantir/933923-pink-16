@@ -6,7 +6,7 @@
 }
 
 .posts__title {
-  background-image: url("../img/cp_background_mobile.jpg");
+  background-image: url("../img/mobile/cp_background_mobile.jpg");
   padding: 0;
   margin: 0;
   padding: 0 30px;
@@ -29,4 +29,30 @@
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+/*стили для планшета*/
+
+@media (min-width: @tablet-width) {
+  .posts__container {
+    width: 660px;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .posts__title {
+    background-image: url("../img/tablet/cp_background_tablet.jpg");
+    font-size: 50px;
+    background-size: 660px 729px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .posts__description {
+    text-align: center;
+    padding: 0 150px;
+  }
 }

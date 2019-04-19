@@ -6,12 +6,17 @@
 }
 
 .page-footer__logo {
-  display: block;
+  // display: block;
   margin-bottom: 40px;
 }
 
+.page-footer__title {
+  padding: 0;
+  margin: 0;
+}
+
 .page-footer__logo-image {
-  display: block;
+  // display: block;
   margin: 0 auto;
 }
 
@@ -21,4 +26,17 @@
   margin: 0;
   display: flex;
   justify-content: center;
+}
+
+/*Стили для планшета*/
+
+@media (min-width: @tablet-width) {
+  .page-footer__container {
+    width: 660px;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+  }
 }

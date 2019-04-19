@@ -46,5 +46,66 @@
 }
 
 .advantage__image-wrapper {
+  position: relative;
   padding: 0 80px;
+}
+
+/*Стили для планшета*/
+
+@media (min-width: @tablet-width) {
+  .advantage__container {
+    width: 660px;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .advantage__description {
+    font-size: 24px;
+    line-height: 1.2;
+    padding: 0 25px;
+    text-align: center;
+  }
+}
+@media (min-width: @tablet-width) {
+  .advantage__description--large-padding {
+    padding: 0 160px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .advantage__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .advantage__item {
+    text-align: right;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .advantage__description--right {
+    text-align: right;
+    font-size: 14px;
+    line-height: 24px;
+    width: 310px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .advantage__image {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+  }
 }
