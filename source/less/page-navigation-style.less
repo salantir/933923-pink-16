@@ -12,3 +12,54 @@
   padding: 0;
   margin: 0;
 }
+
+/*Стилизация для планшета*/
+
+@media (min-width: @tablet-width) {
+  .page-navigation__wrapper-header {
+    display: flex;
+    background-color: @alt-color;
+    padding: 19px 20px;
+    justify-content: space-between;
+  }
+}
+
+/*Стилизация для пк*/
+
+@media (min-width: @desktop-width) {
+  .page-navigation {
+    // position: absolute;
+    display: flex;
+    justify-content: space-between;
+    background-color: @alt-color;
+    // opacity: 0.3;
+    // top: -500px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-navigation__list {
+    display: flex;
+    flex-wrap: nowrap;
+    list-style: none;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    width: 700px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-navigation__togle {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-navigation__wrapper-header {
+    display: flex;
+    background-color: @alt-color;
+    padding: 19px 0;
+    justify-content: flex-start;
+  }
+}

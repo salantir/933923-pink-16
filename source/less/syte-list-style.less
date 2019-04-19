@@ -19,3 +19,17 @@
   background-color: @alt-color;
   width: 100%;
 }
+
+/*стилизация для пк*/
+
+@media (min-width: @desktop-width) {
+  .site-list__item {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    color: @base-color;
+    width: 100%;
+    text-align: center;
+    border: none;
+  }
+}

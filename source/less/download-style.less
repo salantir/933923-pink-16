@@ -53,13 +53,12 @@
   padding-bottom: 20px;
 }
 
+/*стилизация для планшета*/
+
 @media (min-width: @tablet-width) {
   .download__container {
     position: relative;
     width: 660px;
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
   }
 }
 
@@ -105,7 +104,37 @@
     position: absolute;
     display: block;
     left: 20px;
-    top: 70px;
-    font-size: 25px;
+    top: 100px;
+    font-size: 40px;
+    width: 300px;
+    font-weight: lighter;
+    line-height: 1.2;
+    text-align: center;
+  }
+}
+
+/*Стилизация для пк*/
+
+@media (min-width: @desktop-width) {
+  .download__container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .download__wrapper-img {
+    background-image: url("../img/desktop/iphone-6-bg-desktop.jpg");
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 854px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .download__title {
+    display: none;
   }
 }

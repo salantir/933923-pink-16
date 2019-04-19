@@ -46,9 +46,20 @@
 }
 
 /*Стили для планшета*/
+
 @media (min-width: @tablet-width) {
   .post-write__description--red {
     position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+/*Стилизация для пк*/
+
+@media (min-width: @desktop-width) {
+  .post-write__description--red {
+    position: static;
     top: 0;
     right: 0;
   }
