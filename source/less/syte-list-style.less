@@ -22,17 +22,20 @@
 
 /*стилизация для пк*/
 
-// @media (min-width: @desktop-width) {
-//   .site-list__item {
-//     border: none;
-//   }
-// }
-//
-// @media (min-width: @desktop-width) {
-//   .site-list__link {
-//     font-size: 18px;
-//     line-height: 18px;
-//     text-transform: none;
-//     background-color: rgba(40, 54, 69, 0);
-//   }
-// }
+@media (min-width: @desktop-width) {
+  .site-list__item {
+    border: none;
+    box-shadow: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list__link {
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: capitalize;
+    background-color: rgba(40, 54, 69, 0);
+    font-weight: normal;
+    padding-top: 28px;
+  }
+}

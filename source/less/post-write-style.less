@@ -104,20 +104,19 @@
     width: 620px;
   }
 }
-//
-// @media (min-width: @tablet-width) {
-//   .post-write__description {
-//   }
-// }
 
+/*Стилизация для пк*/
 
+@media (min-width: @desktop-width) {
+  .post-write__description--red {
+    position: static;
+    top: 0;
+    right: 0;
+  }
+}
 
-// /*Стилизация для пк*/
-//
-// @media (min-width: @desktop-width) {
-//   .post-write__description--red {
-//     position: static;
-//     top: 0;
-//     right: 0;
-//   }
-// }
+@media (min-width: @tablet-width) {
+  .post-write__wrapper--normal-size {
+    width: 100%;
+  }
+}

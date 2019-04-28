@@ -86,24 +86,40 @@
   }
 }
 
-// /*Стили для пк*/
-//
-// @media (min-width: @desktop-width) {
-//   .posts__container {
-//     width: 1200px;
-//   }
-// }
-//
-// @media (min-width: @desktop-width) {
-//   .posts__title {
-//     background-image: url("../img/desktop/bg-back-desktop@1x.jpg");
-//     background-size: 1200px 853px;
-//   }
-// }
-//
-// @media (min-width: @desktop-width) {
-//   .posts__list {
-//     display: flex;
-//     flex-wrap: wrap;
-//   }
-// }
+/*Стили для пк*/
+
+@media (min-width: @desktop-width) {
+  .posts__container {
+    width: 1200px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+.posts__wrapper {
+    background-image: url("../img/desktop/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: -681px 0;
+    margin-bottom: 92px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .posts__title {
+    padding: 0 280px;
+    padding-top: 174px;
+    padding-bottom: 100px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .posts__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .posts__description {
+    padding: 0 310px;
+  }
+}
