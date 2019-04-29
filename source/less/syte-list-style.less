@@ -15,7 +15,7 @@
   line-height: 32px;
   text-transform: uppercase;
   font-weight: bold;
-  padding: 19px 0;
+  padding: 15px 0;
   background-color: @alt-color;
   width: 100%;
 }
@@ -24,12 +24,18 @@
 
 @media (min-width: @desktop-width) {
   .site-list__item {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    color: @base-color;
-    width: 100%;
-    text-align: center;
     border: none;
+    box-shadow: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list__link {
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: capitalize;
+    background-color: rgba(40, 54, 69, 0);
+    font-weight: normal;
+    padding-top: 28px;
   }
 }

@@ -16,8 +16,13 @@
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
-    display: flex;
-    justify-content: space-around;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .research__title {
+    margin: 0;
+    margin-bottom: 11px;
   }
 }
 
@@ -26,6 +31,32 @@
     width: 310px;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .research__title--big {
+    font-size: 30px;
+    font-weight: bold;
+    padding-right: 15px;
+    line-height: 1.2;
+    padding-top: 37px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .research__wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .research__clock {
+    display: block;
+    margin-right: 25px;
+  }
+}
+
 
 /*Стилизация для пк*/
 
@@ -38,5 +69,29 @@
 @media (min-width: @desktop-width) {
   .research__wrapper-title {
     width: 570px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .research__title {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .research__title--big {
+    font-size: 30px;
+    padding-top: 67px;
+    margin-bottom: 22px;
+    line-height: 1.2;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .research__link {
+    text-decoration: underline;
+    color: red;
   }
 }

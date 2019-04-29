@@ -10,7 +10,8 @@
 .post-write__title {
   padding: 0;
   margin: 0;
-  padding-left: 15px;
+  padding-left: 18px;
+  padding-top: 17px;
 }
 
 .post-write__wrapper--normal-size {
@@ -20,21 +21,30 @@
 .post-write__description {
   padding: 0;
   margin: 0;
-  padding-left: 15px;
+  padding-left: 18px;
+  margin-bottom: 10px;
 }
 
 .post-write__description--red {
+  margin: 0;
+  position: relative;
   color: @like-color;
-  padding-left: 15px;
+  padding-left: 50px;
   text-transform: uppercase;
+  font-size: 12px;
+  line-height: 24px;
+  padding-bottom: 21px;
 }
 
 .post-write__description--heart {
+  margin: 0;
+  position: absolute;
   background-image: url("../img/mobile/icon_heart.svg");
   background-repeat: no-repeat;
   width: 13px;
   height: 12px;
-  padding-right: 18px;
+  left: 18px;
+  bottom: 26px;
 }
 
 .post-write__name {
@@ -43,15 +53,55 @@
 
 .post-write__time {
   font-weight: lighter;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.post__item {
+  margin-bottom: 20px;
 }
 
 /*Стили для планшета*/
 
 @media (min-width: @tablet-width) {
+  .post-write__wrapper-like {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @tablet-width) {
   .post-write__description--red {
+    padding-left: 18px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .post-write__wrapper-like--top {
     position: absolute;
-    top: 0;
+    top: 15px;
     right: 0;
+    width: 150px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .post-write__description--heart {
+    position: static;
+    order: 1;
+    margin-top: 5px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .post-write__wrapper {
+    width: 280px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .post-write__wrapper--normal-size {
+    width: 620px;
   }
 }
 
@@ -62,5 +112,11 @@
     position: static;
     top: 0;
     right: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .post-write__wrapper--normal-size {
+    width: 100%;
   }
 }
