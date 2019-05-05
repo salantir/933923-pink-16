@@ -29,7 +29,6 @@
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 13px;
 }
 
 .advantage__item {
@@ -52,12 +51,15 @@
 }
 
 .advantage__image {
+  position: relative;
   display: block;
+  top: 43px;
 }
 
 .advantage__image-wrapper {
   position: relative;
   padding: 0 80px;
+  overflow: hidden;
 }
 
 /*Стили для планшета*/
@@ -201,7 +203,7 @@
     text-align: center;
     margin-bottom: 24px;
     box-sizing: border-box;
-    padding: 0 60px;
+    padding: 0 45px;
   }
 }
 
@@ -216,7 +218,7 @@
 
 @media (min-width: @desktop-width) {
   .advantage__list {
-    justify-content: space-between;
+    justify-content: center;
     margin: 0;
     flex-wrap: nowrap;
   }
@@ -226,12 +228,19 @@
   .advantage__item {
     text-align: center;
     margin-bottom: 34px;
-    width: 30%;
+    width: 27%;
   }
 }
 
 @media (min-width: @desktop-width) {
   .advantage__description--small {
-    padding: 0 65px;
+    padding: 0 45px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantage__wrapper {
+    background-color: #ffffff;
+    background-image: linear-gradient(175deg, #ffffff 50%, #ffffff 56%, #f2f2f2 56%);
   }
 }

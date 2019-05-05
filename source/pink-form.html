@@ -12,7 +12,11 @@
         <nav class="page-navigation">
           <div class="page-navigation__wrapper-header">
             <a  class="page-navigation__logo" href="index.html">
-              <img class="page-navigation__logo-image" src="img/icon_logo_pink_white_mobile.svg" width="75" height="22" alt="pink">
+              <picture>
+                <source media="(min-width: 5000px)" srcset="img/logo-pink-white-desktop.svg" width="147" height="40" alt="pink">
+                <source media="(min-width: 5000px)" srcset="img/logo-pink-white-tablet.svg"  width="147" height="40" alt="pink">
+                <img class="page-navigation__logo-image" src="img/icon-logo-pink-white-mobile.svg" width="75" height="22" alt="pink">
+              </picture>
             </a>
             <button class="page-navigation__togle" type="button">
               Открыть меню
@@ -43,6 +47,25 @@
           <div class="competition__wrapper">
             <h1 class="competition__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
           </div>
+          <!-- <div class="competition__form">
+            <p class="competition__title competition__title--small">
+              Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
+            </p>
+            <form class="identification" method="get" action="http://echo.htmlacademy.ru">
+              <label>
+                <span>Фамилия:</span>
+                <input type="text" name="surname" value="Укажите фамилию*">
+              </label>
+              <label>
+                <span>Имя:</span>
+                <input type="text" name="name" value="Введите ваше имя*">
+              </label>
+              <label>
+                <span>Отчество:</span>
+                <input type="text" name="patronymic" value="Ну и отчество тоже">
+              </label>
+            </form>
+          </div> -->
         </div>
       </section>
     </main>
@@ -75,7 +98,7 @@
             </li>
             <li class="engineering__item">
               <a class="engineering__logo" href="https://htmlacademy.ru">
-              <img class="engineering__logo-image" src="img/icon_logo_htmlacademy.svg" width="27" height="34" alt="Логотип Htmlacademy">
+              <img class="engineering__logo-image" src="img/icon-logo-htmlacademy.svg" width="27" height="34" alt="Логотип Htmlacademy">
             </a>
             </li>
           </ul>

@@ -12,7 +12,11 @@
         <nav class="page-navigation">
           <div class="page-navigation__wrapper-header">
             <a  class="page-navigation__logo" href="index.html">
-              <img class="page-navigation__logo-image" src="img/icon_logo_pink_white_mobile.svg" width="75" height="22" alt="pink">
+              <picture>
+                <source media="(min-width: 5000px)" srcset="img/logo-pink-white-desktop.svg" width="147" height="40" alt="pink">
+                <source media="(min-width: 5000px)" srcset="img/logo-pink-white-tablet.svg"  width="147" height="40" alt="pink">
+                <img class="page-navigation__logo-image" src="img/icon-logo-pink-white-mobile.svg" width="75" height="22" alt="pink">
+              </picture>
             </a>
             <button class="page-navigation__togle" type="button">
               Открыть меню
@@ -49,7 +53,15 @@
           </p>
           <ul class="posts__list post">
             <li class="post__item post__item--full post-write">
-              <img class="post-write__image" src="img/mobile/cp_panorama_mobile@1x.jpg" width="320" height="137" alt="Панорама">
+              <picture>
+                <source media="(min-width: 5000px)" srcset="img/panorama-desktop@2x.jpg 2x,
+                  img/panorama-desktop@1x.jpg 1x">
+                <source media="(min-width: 5000px)" srcset="img/panorama-tablet@2x.jpg 2x,
+                  img/panorama-tablet@1x.jpg 1x">
+                <source srcset="img/panorama-mobile@2x.jpg 2x,
+                  img/panorama-mobile@1x.jpg 1x">
+                <img class="post-write__image" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама">
+              </picture>
               <div class="post-write__wrapper post-write__wrapper--normal-size">
                 <p class="post-write__title">
                   <span class="post-write__name">Анна</span>
@@ -68,7 +80,15 @@
               </div>
             </li>
             <li class="post__item post-write">
-              <img class="post-write__image" src="img/mobile/cp_photo_car_mobile@1x.jpg" width="280" height="180" alt="Фото машины">
+              <picture>
+                <source media="(min-width: 5000px)" srcset="img/photo-car-desktop@2x.jpg 2x,
+                  img/photo-car-desktop@1x.jpg 1x">
+                <source media="(min-width: 5000px)" srcset="img/photo-car-tablet@2x.jpg 2x,
+                  img/photo-car-tablet@1x.jpg 1x">
+                <source srcset="img/photo-car-mobile@2x.jpg 2x,
+                  img/photo-car-mobile@1x.jpg 1x">
+                <img class="post-write__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фото машины">
+              </picture>
               <div class="post-write__wrapper">
                 <p class="post-write__title">
                   <span class="post-write__name">Левон</span>
@@ -86,7 +106,15 @@
               </div>
             </li>
             <li class="post__item post-write">
-              <img class="post-write__image" src="img/mobile/cp_photo_drumset_mobile@1x.jpg" width="280" height="180" alt="Барбаны">
+              <picture>
+                <source media="(min-width: 5000px)" srcset="img/photo-drumset-desktop@2x.jpg 2x,
+                  img/photo-drumset-desktop@1x.jpg 1x">
+                <source media="(min-width: 5000px)" srcset="img/photo-drumset-tablet@2x.jpg 2x,
+                  img/photo-drumset-tablet@1x.jpg 1x">
+                <source srcset="img/photo-drumset-mobile@2x.jpg 2x,
+                  img/photo-drumset-mobile@1x.jpg 1x">
+                <img class="post-write__image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Барбаны">
+              </picture>
               <div class="post-write__wrapper">
                 <p class="post-write__title">
                   <span class="post-write__name">Антон</span>
@@ -104,7 +132,15 @@
               </div>
             </li>
             <li class="post__item post-write">
-              <img class="post-write__image" src="img/mobile/cp_photo_window_mobile@1x.jpg" width="280" height="180" alt="Окно">
+              <picture>
+                <source media="(min-width: 5000px)" srcset="img/photo-window-desktop@2x.jpg 2x,
+                  img/photo-window-desktop@1x.jpg 1x">
+                <source media="(min-width: 5000px)" srcset="img/photo-window-tablet@2x.jpg 2x,
+                  img/photo-window-tablet@1x.jpg 1x">
+                <source srcset="img/photo-window-mobile@2x.jpg 2x,
+                  img/photo-window-mobile@1x.jpg 1x">
+                <img class="post-write__image" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Окно">
+              </picture>
               <div class="post-write__wrapper">
                 <p class="post-write__title">
                   <span class="post-write__name">Борис</span>
@@ -122,7 +158,15 @@
               </div>
             </li>
             <li class="post__item post-write">
-              <img class="post-write__image" src="img/mobile/cp_photo_fair_mobile@1x.jpg" width="280" height="180" alt="Кубанская бахча">
+              <picture>
+                <source media="(min-width: 5000px)" srcset="img/photo-fair-desktop@2x.jpg 2x,
+                  img/photo-fair-desktop@1x.jpg 1x">
+                <source media="(min-width: 5000px)" srcset="img/photo-fair-tablet@2x.jpg 2x,
+                  img/photo-fair-tablet@1x.jpg 1x">
+                <source srcset="img/photo-fair-mobile@2x.jpg 2x,
+                  img/photo-fair-mobile@1x.jpg 1x">
+                <img class="post-write__image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Кубанская бахча">
+              </picture>
               <div class="post-write__wrapper">
                 <p class="post-write__title">
                   <span class="post-write__name">Сергей</span>
@@ -140,7 +184,15 @@
               </div>
             </li>
             <li class="post__item post-write">
-              <img class="post-write__image" src="img/mobile/cp_photo_pov_mobile@1x.jpg" width="280" height="180" alt="Я на горе">
+              <picture>
+                <source media="(min-width: 5000px)" srcset="img/photo-pov-desktop@2x.jpg 2x,
+                  img/photo-pov-desktop@1x.jpg 1x">
+                <source media="(min-width: 5000px)" srcset="img/photo-pov-tablet@2x.jpg 2x,
+                  img/photo-pov-tablet@1x.jpg 1x">
+                <source srcset="img/photo-pov-mobile@2x.jpg 2x,
+                  img/photo-pov-mobile@1x.jpg 1x">
+                <img class="post-write__image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Я на горе">
+              </picture>
               <div class="post-write__wrapper">
                 <p class="post-write__title">
                   <span class="post-write__name">Максим</span>
@@ -158,7 +210,15 @@
               </div>
             </li>
             <li class="post__item post-write">
-              <img class="post-write__image" src="img/mobile/cp_photo_wing_mobile@1x.jpg" width="280" height="180" alt="Крыло самолета">
+              <picture>
+                <source media="(min-width: 5000px)" srcset="img/photo-wing-desktop@2x.jpg 2x,
+                  img/photo-wing-desktop@1x.jpg 1x">
+                <source media="(min-width: 5000px)" srcset="img/photo-wing-tablet@2x.jpg 2x,
+                  img/photo-wing-tablet@1x.jpg 1x">
+                <source srcset="img/photo-wing-mobile@2x.jpg 2x,
+                  img/photo-wing-mobile@1x.jpg 1x">
+                <img class="post-write__image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Крыло самолета">
+              </picture>
               <div class="post-write__wrapper">
                 <p class="post-write__title">
                   <span class="post-write__name">Надежда</span>
@@ -183,7 +243,7 @@
       <div class="page-footer__container">
         <div class="page-footer__wrapper">
           <a class="page-footer__logo" href="index.html">
-            <img class="page-footer__logo-image" src="img/icon_logo_pink_blue_mobile.svg" width="147" height="40" alt="Логотип Pink">
+            <img class="page-footer__logo-image" src="img/icon-logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип Pink">
           </a>
           <ul class="page-footer__list social">
             <li class="social__item logo">
@@ -208,7 +268,7 @@
             </li>
             <li class="engineering__item">
               <a class="engineering__logo" href="https://htmlacademy.ru">
-              <img class="engineering__logo-image" src="img/icon_logo_htmlacademy.svg" width="27" height="34" alt="Логотип Htmlacademy">
+              <img class="engineering__logo-image" src="img/icon-logo-htmlacademy.svg" width="27" height="34" alt="Логотип Htmlacademy">
             </a>
             </li>
           </ul>
