@@ -57,66 +57,107 @@
   font-size: 12px;
 }
 
-.post__item {
-  margin-bottom: 20px;
+/*Стили для планшета*/
+
+@media (min-width: @tablet-width) {
+  .post-write__wrapper-like {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
-// /*Стили для планшета*/
-//
-// @media (min-width: @tablet-width) {
-//   .post-write__wrapper-like {
-//     display: flex;
-//     justify-content: space-between;
-//   }
-// }
-//
-// @media (min-width: @tablet-width) {
-//   .post-write__description--red {
-//     padding-left: 18px;
-//   }
-// }
-//
-// @media (min-width: @tablet-width) {
-//   .post-write__wrapper-like--top {
-//     position: absolute;
-//     top: 15px;
-//     right: 0;
-//     width: 150px;
-//   }
-// }
-//
-// @media (min-width: @tablet-width) {
-//   .post-write__description--heart {
-//     position: static;
-//     order: 1;
-//     margin-top: 5px;
-//   }
-// }
-//
-// @media (min-width: @tablet-width) {
-//   .post-write__wrapper {
-//     width: 280px;
-//   }
-// }
-//
-// @media (min-width: @tablet-width) {
-//   .post-write__wrapper--normal-size {
-//     width: 620px;
-//   }
-// }
-//
-// /*Стилизация для пк*/
-//
-// @media (min-width: @desktop-width) {
-//   .post-write__description--red {
-//     position: static;
-//     top: 0;
-//     right: 0;
-//   }
-// }
-//
-// @media (min-width: @tablet-width) {
-//   .post-write__wrapper--normal-size {
-//     width: 100%;
-//   }
-// }
+@media (min-width: @tablet-width) {
+  .post-write__description {
+    padding-bottom: 25px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .post-write__description--red {
+    padding-left: 3px;
+    padding-top: 10px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .post-write__wrapper-like--top {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    width: 150px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .post-write__description--heart {
+    position: static;
+    order: 1;
+    margin-top: 15px;
+    padding-right: 11px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .post-write__wrapper {
+    width: 300px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .post-write__wrapper--normal-size {
+    width: 620px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .post-write__image--right {
+    position: relative;
+    right: 20px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .post-write__title {
+    padding-left: 28px;
+    padding-top: 24px;
+  }
+}
+
+/*Стилизация для пк*/
+
+@media (min-width: @desktop-width) {
+  .post-write__description--red {
+    position: static;
+    top: 0;
+    right: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .post__item {
+    margin: 0 10px;
+    margin-bottom: 18px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .post-write__wrapper--normal-size {
+    width: 940px;
+    margin: 0;
+    margin-left: 129px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .post-write__image--right {
+    position: relative;
+    right: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .post__item--full {
+    margin: 0;
+    margin-bottom: 38px;
+  }
+}

@@ -1,7 +1,23 @@
 .post__item {
   padding: 0 20px;
+  margin-bottom: 20px;
 }
 
 .post__item--full {
   padding: 0;
+}
+
+/*Стили для планшета*/
+
+@media (min-width: @tablet-width) {
+  .post__item {
+    padding: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .post__item--full {
+    overflow: hidden;
+    margin-bottom: 39px;
+  }
 }

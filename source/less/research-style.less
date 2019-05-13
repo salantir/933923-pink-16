@@ -47,6 +47,7 @@
   .research__wrapper {
     display: flex;
     justify-content: space-around;
+    position: relative;
   }
 }
 
@@ -57,41 +58,92 @@
   }
 }
 
+@media (min-width: @tablet-width) {
+  .research__number {
+    color: #d22856;
+    border: 15px solid #d22856;
+    border-radius: 50%;
+    position: absolute;
+    font-size: 96px;
+    line-height: 149,47px;
+    font-weight: bold;
+    padding: 75px 30px;
+    left: 41px;
+    top: -40px;
+  }
+}
 
-// /*Стилизация для пк*/
-//
-// @media (min-width: @desktop-width) {
-//   .research__container {
-//     width: 1200px;
-//   }
-// }
-//
-// @media (min-width: @desktop-width) {
-//   .research__wrapper-title {
-//     width: 625px;
-//   }
-// }
-//
-// @media (min-width: @desktop-width) {
-//   .research__title {
-//     font-size: 18px;
-//     line-height: 30px;
-//     margin-bottom: 30px;
-//   }
-// }
-//
-// @media (min-width: @desktop-width) {
-//   .research__title--big {
-//     font-size: 30px;
-//     padding-top: 67px;
-//     margin-bottom: 22px;
-//     line-height: 1.2;
-//   }
-// }
-//
-// @media (min-width: @desktop-width) {
-//   .research__link {
-//     text-decoration: underline;
-//     color: red;
-//   }
-// }
+@media (min-width: @tablet-width) {
+  .research__link {
+    color: #d22856;
+  }
+}
+
+/*Стилизация для пк*/
+
+@media (min-width: @desktop-width) {
+  .research__container {
+    width: 1200px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .research__wrapper-title {
+    width: 625px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .research__wrapper {
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .research__title {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .research__title--big {
+    font-size: 30px;
+    padding-top: 90px;
+    margin-bottom: 22px;
+    line-height: 1.2;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .research__link {
+    text-decoration: underline;
+    color: red;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .research__clock {
+    width: 298px;
+    height: 345px;
+    margin: 0;
+    margin-left: 130px;
+    margin-right: 69px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .research__number {
+    color: #d22856;
+    border: 15px solid #d22856;
+    border-radius: 50%;
+    position: absolute;
+    font-size: 120px;
+    line-height: 186,84px;
+    font-weight: bold;
+    padding: 98px 43px;
+    left: 154px;
+    top: -49px;
+  }
+}
