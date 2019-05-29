@@ -12,6 +12,7 @@ var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 var posthtml = require("gulp-posthtml");
 var del = require("del");
+var include = require("posthtml-include");
 
 gulp.task("css", function () {
   return gulp.src("source/less/style.less")
@@ -40,7 +41,7 @@ gulp.task("images", function() {
 
 gulp.task("html", function () {
   return gulp.src("source/*.html")
-    .pipe(posthtml())
+    .pipe(posthtml([include()]))
     .pipe(gulp.dest("build"));
 });
 
@@ -53,8 +54,8 @@ gulp.task("server", function () {
     ui: false
   });
 
-  gulp.watch("source/less/**/*.less", gulp.series("css"));
-  gulp.watch("source/*.html").on("change", server.reload);
+  gulp.watch("source/less/**/*.less", gulp.series("css")).on("change", server.reload);
+  gulp.watch("source/*.html", gulp.series("html")).on("change", server.reload);
 });
 
 gulp.task("copy", function () {

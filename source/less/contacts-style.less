@@ -19,6 +19,8 @@
 .contacts__title--red {
   color: @like-color;
   padding: 0 15px;
+  font-size: 24px;
+  line-height: 1.2;
 }
 
 .contacts__title--bold {
@@ -153,11 +155,38 @@
   .contacts__title:nth-child(7) {
     padding: 0 185px;
   }
+
+  .contacts__map {
+    background-image: url("../img/bg-map-tablet@1x.jpg");
+    height: 363px;
+    background-position: -20px -359px;
+  }
+
+  .contacts__map::after {
+    background-image: url("../img/bg-triangle-white-footer.svg");
+    width: 660px;
+    height: 500px;
+    background-size: contain;
+  }
+
+  .contacts__map::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon-map-marker.svg");
+    background-repeat: no-repeat;
+    display: block;
+    width: 36px;
+    height: 35px;
+    left: 142px;
+    bottom: 71px;
+  }
+
+
 }
 
 /*стилизация для пк*/
 
-@media (min-width: @tablet-width) {
+@media (min-width: @desktop-width) {
   .contacts__title--big {
     font-size: 50px;
     line-height: 1.2;
