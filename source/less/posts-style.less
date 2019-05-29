@@ -10,6 +10,10 @@
   background-repeat: no-repeat;
   background-position: 0 -70px;
   margin-bottom: 45px;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
 }
 
 .posts__title {
@@ -35,6 +39,10 @@
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.posts {
+  margin-bottom: 36px;
 }
 
 /*стили для планшета*/
@@ -83,13 +91,13 @@
   .posts__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
   }
 }
 
 @media (min-width: @tablet-width) {
   .posts {
-    margin-bottom: 15px;
+    margin-bottom: 5px;
   }
 }
 
@@ -107,6 +115,10 @@
     background-repeat: no-repeat;
     background-position: -681px 0;
     margin-bottom: 92px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-mobile@2x.jpg");
+    }
   }
 }
 

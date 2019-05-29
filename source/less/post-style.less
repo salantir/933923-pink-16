@@ -12,12 +12,30 @@
 @media (min-width: @tablet-width) {
   .post__item {
     padding: 0;
+    margin-left: 20px;
   }
 }
 
 @media (min-width: @tablet-width) {
   .post__item--full {
     overflow: hidden;
-    margin-bottom: 39px;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+}
+
+/*Стили для пк*/
+
+@media (min-width: @desktop-width) {
+  .post__item {
+    margin: 0 10px;
+    margin-bottom: 54px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .post__item--full {
+    margin: 0;
+    margin-bottom: 38px;
   }
 }

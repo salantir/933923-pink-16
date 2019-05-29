@@ -1,0 +1,246 @@
+.slider__container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.slider__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.slider__item-title {
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+  margin: 0;
+  margin-bottom: 13px;
+}
+
+.slider__item-description {
+  text-align: center;
+  padding: 0 25px;
+  line-height: 30px;
+  margin: 0;
+}
+
+.slider__item-description--name {
+  display: none;
+}
+
+.slider__item {
+  display: none;
+}
+
+.slider {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 175px;
+}
+
+.slider__controls {
+  position: absolute;
+  left: 50%;
+  bottom: -48px;
+  z-index: 100;
+  width: 69px;
+  height: 18px;
+  text-align: center;
+  font-size: 0;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider__controls-item {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
+  vertical-align: inherit;
+}
+
+.slider__controls-item::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  z-index: 1;
+  width: 6px;
+  height: 6px;
+  background-color: gray;
+  border-radius: 50%;
+  opacity: 0.3;
+}
+
+#comment-1:checked ~ .slider__list .slider__item:nth-child(1) {
+  display: block;
+}
+
+#comment-2:checked ~ .slider__list .slider__item:nth-child(2) {
+  display: block;
+}
+
+#comment-3:checked ~ .slider__list .slider__item:nth-child(3) {
+  display: block;
+}
+
+#comment-1:checked ~ .slider__controls .slider__controls-item--1::before,
+#comment-2:checked ~ .slider__controls .slider__controls-item--2::before,
+#comment-3:checked ~ .slider__controls .slider__controls-item--3::before {
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  z-index: 2;
+  width: 6px;
+  height: 6px;
+  background-color: inherit;
+  border: 3px solid #000000;
+  border-radius: 50%;
+}
+
+/*стили для планшета*/
+
+@media (min-width: @tablet-width) {
+  .slider__container {
+    width: 660px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .slider {
+    margin-bottom: 125px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .slider__controls {
+    bottom: -147px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .slider__item {
+    position: relative;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .slider__item-title {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -78px;
+    left: 243px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .slider__item-description {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0 25px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .slider__item-description--name {
+    display: block;
+    position: absolute;
+    line-height: 30px;
+    font-size: 14px;
+    bottom: -97px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .slider__quotes {
+    display: none;
+  }
+}
+
+/*Стилизация для пк*/
+
+@media (min-width: @desktop-width) {
+  .slider__container {
+    width: 1200px;
+    position: relative;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .slider__quotes {
+    display: block;
+    position: absolute;
+    left: 563px;
+    top: -26px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .slider__controls {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .slider__list {
+    position: relative;
+    padding-top: 88px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .slider__list::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon-review-arrow-left.svg");
+    width: 22px;
+    height: 41px;
+    background-repeat: no-repeat;
+    display: block;
+    top: 115px;
+    left: 130px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .slider__list::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon-review-arrow-right.svg");
+    width: 22px;
+    height: 41px;
+    background-repeat: no-repeat;
+    display: block;
+    top: 115px;
+    right: 130px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .slider__item-description {
+    padding: 0 240px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .slider__item-title {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    left: 495px;
+  }
+}

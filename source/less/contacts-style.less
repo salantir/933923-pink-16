@@ -1,0 +1,197 @@
+.contacts__container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contacts__title {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.contacts__title--big {
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.contacts__title--red {
+  color: @like-color;
+  padding: 0 15px;
+}
+
+.contacts__title--bold {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.contacts__title:nth-child(1) {
+  margin-bottom: 35px;
+}
+
+.contacts__title:nth-child(2) {
+  margin-bottom: 1px;
+}
+
+.contacts__title:nth-child(3) {
+  margin-bottom: 21px;
+}
+
+.contacts__title:nth-child(4) {
+  margin-left: 4px;
+  margin-bottom: 3px;
+}
+
+.contacts__title:nth-child(5) {
+  margin-bottom: 24px;
+  margin-left: 5px;
+}
+
+.contacts__title:nth-child(6) {
+  margin-bottom: 3px;
+}
+
+.contacts__title:nth-child(7) {
+  margin-bottom: 38px;
+}
+
+.contacts__map {
+  position: relative;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  height: 200px;
+  background-position: 0 -446px;
+  background-repeat: no-repeat;
+}
+
+.contacts__map::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/bg-triangle-white-footer.svg");
+  width: 320px;
+  height: 34px;
+  background-repeat: no-repeat;
+  display: block;
+  background-size: cover;
+}
+
+.contacts__map::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-map-marker.svg");
+  background-repeat: no-repeat;
+  display: block;
+  width: 36px;
+  height: 35px;
+  left: 142px;
+  bottom: 71px;
+}
+
+/*стили для планшета*/
+
+@media (min-width: @tablet-width) {
+.contacts__container {
+  width: 660px;
+  position: relative;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__title {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__title--bold {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__title--big {
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: lighter;
+    padding: 0 45px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__title--red {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__title:nth-child(1) {
+    margin-bottom: 147px;
+  }
+  .contacts__title:nth-child(2) {
+    position: absolute;
+    left: 127px;
+    top: 139px;
+  }
+  .contacts__title:nth-child(3) {
+    position: absolute;
+    left: 22px;
+    top: 168px;
+  }
+  .contacts__title:nth-child(4) {
+    position: absolute;
+    right: 128px;
+    top: 139px;
+  }
+  .contacts__title:nth-child(5) {
+    position: absolute;
+    right: 4px;
+    top: 170px;
+  }
+  .contacts__title:nth-child(6) {
+    margin-bottom: 7px;
+  }
+  .contacts__title:nth-child(7) {
+    padding: 0 185px;
+  }
+}
+
+/*стилизация для пк*/
+
+@media (min-width: @tablet-width) {
+  .contacts__title--big {
+    font-size: 50px;
+    line-height: 1.2;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__title:nth-child(1) {
+    margin-bottom: 55px;
+  }
+  .contacts__title:nth-child(2) {
+    position: absolute;
+    left: -32px;
+    top: 175px;
+  }
+  .contacts__title:nth-child(3) {
+    position: absolute;
+    left: -107px;
+    top: 224px;
+  }
+  .contacts__title:nth-child(4) {
+    position: absolute;
+    right: -32px;
+    top: 175px;
+  }
+  .contacts__title:nth-child(5) {
+    position: absolute;
+    right: -126px;
+    top: 226px;
+  }
+  .contacts__title:nth-child(6) {
+    margin-bottom: 25px;
+  }
+  .contacts__title:nth-child(7) {
+    padding: 0 185px;
+  }
+}
